@@ -23,11 +23,10 @@ let destinationCountry = prompt(
 
 if (destinationCountry === null) {
   console.log('Отменено пользователем');
-} else {
-  destinationCountry.toLowerCase();
+  debugger;
 }
 
-switch (destinationCountry) {
+switch (destinationCountry.toLowerCase()) {
   case china.toLowerCase():
     message = `Доставка в ${china} будет стоить ${chinaDelivPrice} кредитов`;
     break;
