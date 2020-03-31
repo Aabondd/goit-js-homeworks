@@ -67,14 +67,14 @@ console.log(findLongestWord('May the force be with you'));
 //---------------------- 4 ------------------------------
 
 const formatString = function(string) {
-  let stringArray = string.split('');
-  let editedStringArray;
+  let stringLength = string.length;
+
+  let editedString;
   let displayedString;
 
-  if (stringArray.length > 40) {
-    editedStringArray = stringArray.slice(0, 39);
-    editedStringArray.push('...');
-    displayedString = editedStringArray.join('');
+  if (stringLength > 40) {
+    editedString = string.slice(0, 39);
+    displayedString = editedString + '...';
   } else {
     displayedString = string;
   }
@@ -89,6 +89,30 @@ console.log(
     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
   ),
 );
+
+// const formatString = function(string) {
+//   let stringArray = string.split('');
+//   let editedStringArray;
+//   let displayedString;
+
+//   if (stringArray.length > 40) {
+//     editedStringArray = stringArray.slice(0, 39);
+//     editedStringArray.push('...');
+//     displayedString = editedStringArray.join('');
+//   } else {
+//     displayedString = string;
+//   }
+//   return console.log(displayedString);
+// };
+
+// console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+// console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+// console.log(formatString('Curabitur ligula sapien.'));
+// console.log(
+//   formatString(
+//     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+//   ),
+// );
 
 //------------------------ 5 --------------------------
 
