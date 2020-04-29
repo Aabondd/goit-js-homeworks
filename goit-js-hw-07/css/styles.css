@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 100px;
+  overflow: hidden;
+  margin: 20;
+  padding: 30;
+  margin-bottom: 10px;
+}
+
+.gallery-img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.gallery-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
