@@ -14,13 +14,9 @@ Task - 06
 
 const input = document.querySelector('#validation-input');
 
-console.log(input);
-
 input.addEventListener('blur', handleInputValidation);
 
 const dataLength = Number(input.getAttribute('data-length'));
-
-console.log(dataLength);
 
 function handleInputValidation(event) {
   const inputValue = event.currentTarget.value;

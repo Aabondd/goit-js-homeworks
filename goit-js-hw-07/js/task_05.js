@@ -16,7 +16,6 @@ const output = document.querySelector('#name-output');
 
 input.addEventListener('input', handleInputChange);
 
-console.log(input.currentTarget);
 function handleInputChange(event) {
   if (event.currentTarget.value === '') {
     output.textContent = 'незнакомец';
