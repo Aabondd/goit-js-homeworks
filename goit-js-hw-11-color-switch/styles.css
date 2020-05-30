@@ -1,0 +1,25 @@
+.color__change {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px;
+}
+
+button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  margin: 20px;
+  width: 171px;
+  height: 65px;
+  box-shadow: 0px 0px 16px #c80de0;
+  border: 2px solid;
+  border-image: linear-gradient(#360154, #d442d5) 30;
+}
+
+button[data-action='start'] {
+  background-color: green;
+}
+
+button[data-action='stop'] {
+  background-color: red;
+}
