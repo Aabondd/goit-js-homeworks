@@ -1,0 +1,35 @@
+<li class="country__info">
+    <div class="card">
+        <h2 class="country__name">{{name}}</h2>
+        <img src="{{flag}}" alt="{{name}}" class="flag__image" />
+        <div class="coutry__content">
+
+            <p class="capital">
+                <span class="underline-text">Capital</span>:
+                {{capital}}
+            </p>
+
+            <p class="region">
+                <span class="underline-text">Region</span>:
+                {{region}}
+            </p>
+
+            <p class="population"><span class="underline-text">Population</span>:
+                {{population}}
+            </p>
+            <p class="currency"><span class="underline-text">Currency</span>:
+                {{#each currencies}} {{this.name}} - {{symbol}} {{/each}}
+            </p>
+
+            <p class="languages"><span class="underline-text">Language</span>:
+            </p>
+            <ul class="language-list">
+                {{#each languages}}
+                <li class="language-list__item">{{this.name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+
+
+    </div>
+</li>

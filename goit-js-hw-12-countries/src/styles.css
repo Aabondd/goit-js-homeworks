@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+
+.country__info {
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.card {
+  text-align: left;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 30px;
+}
+
+.country__name {
+  text-align: center;
+}
+.underline-text {
+  text-decoration: underline;
+  color: #0e0ca4;
+}
+
+label {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 30px;
+}
+
+input {
+  width: 544px;
+  border: 2px outset #0e0ca4;
+  border-radius: 28px 29px 29px 29px;
+  font-size: 20px;
+  padding-left: 10px;
+  box-shadow: 3px 3px 3px 0px #000000;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 100%;
+  padding-top: 60px;
+}
+
+.flag__image {
+  width: 400px;
+  border-radius: 10%;
+  border: 2px outset #0e0ca4;
+  box-shadow: 3px 3px 3px 0px #000000;
+}
