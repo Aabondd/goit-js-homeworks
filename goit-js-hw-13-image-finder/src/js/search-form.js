@@ -23,6 +23,16 @@ function searchFormSubmitHandler(e) {
   if (inputValue !== '') {
     fetchPhotos();
     refs.loadMoreBtn.classList.remove('hidden');
+
+    // refs.loadMoreBtn.scrollTo();
+    // window.scrollTo({
+    //   'behavior': 'smooth',
+    //   'left': 0,
+    //   'top': element.offsetTop
+    // });
+    // refs.loadMoreBtn.document.scrollIntoView({
+    //   behavior: 'smooth',
+    // });
   } else {
     console.log('Please enter search query!');
   }
@@ -45,10 +55,29 @@ function fetchPhotos() {
     });
 }
 
+// const x = {
+//   position: 0,
+// };
+
 function insertSearchListItems(items) {
   const markup = galleryPhotoItemTemplate(items);
 
   refs.gallery.insertAdjacentHTML('beforeend', markup);
+
+  //
+  const lastItemOffset = refs.gallery.lastElementChild.offsetTop;
+  // const firstItemOffset = refs.gallery.firstElementChild.offsetTop;
+  // console.log(lastItemOffset);
+  // const la = x.position;
+  // const offSet = lastItemOffset + la;
+  // x.position = offSet;
+  // console.log(x.position);
+
+  window.scrollTo({
+    behavior: 'smooth',
+    left: 0,
+    top: lastItemOffset,
+  });
 }
 
 function clearListItems() {
